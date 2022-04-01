@@ -7,8 +7,13 @@ btn.addEventListener('click', function () {
     // console.log(getRandomNumber())
     document.body.style.backgroundColor = colors[randomColor]
     color.textContent = colors[randomColor]
+
 })
 
 function getRandomNumber() {
     return Math.floor(Math.random() * colors.length)
 }
+
+simple.addEventListener('click', function () {
+    h2.textContent = 'Simple'
+})

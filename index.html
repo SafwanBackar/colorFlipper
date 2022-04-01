@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <title>Color Flipper</title>
 </head>
 
 <body>
-    <nav>
-        <div class="nav-center">
-            <h4>Color Flipper</h4>
-            <ul class="nav-links">
-                <li>
-                    <a href="index.html">Simple</a>
-                </li>
-                <li>
-                    <a href="hex.html">Hex</a>
-                </li>
-            </ul>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand font-weight-bold" href="#">Color Flipper</a>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Simple</a>
+            </li>
+            <li class="nav-item active" id="hex">
+                <a class="nav-link" href="hex.html">Hex</a>
+            </li>
+        </ul>
     </nav>
     <main>
-        <div class="container">
-            <h2>Background Color - <span class="color">White</span></h2>
-            <button class="btn btn-hero " id="btn">Click Me</button>
+        <div class="container box" id="box">
+            <h2>Background Color (Simple)- <span class="color">White</span></h2>
+            <button class="btn btn-primary btn-sm mt-3" id="btn">Click Me</button>
         </div>
     </main>
 
